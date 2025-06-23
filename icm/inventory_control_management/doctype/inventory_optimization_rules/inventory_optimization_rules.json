@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-11 19:25:38.719235",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_uvcg",
+  "item_category",
+  "min_stock",
+  "max_stock",
+  "column_break_jgcw",
+  "reorder_point_days",
+  "lead_time_days",
+  "section_break_oe9h",
+  "warehouse_priority",
+  "section_break_vyil",
+  "optimal_distribution_result",
+  "section_break_ehxk",
+  "forecast_result"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_uvcg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jgcw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_oe9h",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Category",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "min_stock",
+   "fieldtype": "Float",
+   "label": "Minimum Stock Level"
+  },
+  {
+   "fieldname": "max_stock",
+   "fieldtype": "Float",
+   "label": "Maximum Stock Level"
+  },
+  {
+   "fieldname": "reorder_point_days",
+   "fieldtype": "Int",
+   "label": "Reorder Point (Days)"
+  },
+  {
+   "fieldname": "lead_time_days",
+   "fieldtype": "Int",
+   "label": "Lead Time (Days)"
+  },
+  {
+   "fieldname": "warehouse_priority",
+   "fieldtype": "Table",
+   "label": "Warehouse Priority ",
+   "options": "Warehouse Priority"
+  },
+  {
+   "fieldname": "section_break_vyil",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "optimal_distribution_result",
+   "fieldtype": "Table",
+   "label": "Optimal Distribution Result",
+   "options": "Optimal Stock Distribution Entry"
+  },
+  {
+   "fieldname": "section_break_ehxk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "forecast_result",
+   "fieldtype": "Table",
+   "label": "Forecast Result Entry",
+   "options": "Forecast Result Entry"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-19 23:09:49.813068",
+ "modified_by": "Administrator",
+ "module": "Inventory Control Management",
+ "name": "Inventory Optimization Rules",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

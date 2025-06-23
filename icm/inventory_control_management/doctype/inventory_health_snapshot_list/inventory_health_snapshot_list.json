@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-17 15:37:59.474997",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_0ul1",
+  "overstocked",
+  "understocked",
+  "column_break_s3pn",
+  "healthy",
+  "total_bins",
+  "total_stock",
+  "average_stock",
+  "section_break_wznl",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_0ul1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overstocked",
+   "fieldtype": "Int",
+   "label": "Overstocked"
+  },
+  {
+   "fieldname": "understocked",
+   "fieldtype": "Int",
+   "label": "Understocked"
+  },
+  {
+   "fieldname": "healthy",
+   "fieldtype": "Int",
+   "label": "Healthy"
+  },
+  {
+   "fieldname": "column_break_s3pn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_bins",
+   "fieldtype": "Int",
+   "label": "Total Bins"
+  },
+  {
+   "fieldname": "total_stock",
+   "fieldtype": "Float",
+   "label": "Total Stock"
+  },
+  {
+   "fieldname": "average_stock",
+   "fieldtype": "Float",
+   "label": "Average Stock"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Inventory Health Snapshot Item"
+  },
+  {
+   "fieldname": "section_break_wznl",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-17 16:21:42.018062",
+ "modified_by": "Administrator",
+ "module": "Inventory Control Management",
+ "name": "Inventory Health Snapshot List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

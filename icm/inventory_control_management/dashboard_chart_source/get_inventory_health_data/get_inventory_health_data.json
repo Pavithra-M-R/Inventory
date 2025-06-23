@@ -1,0 +1,13 @@
+{
+ "creation": "2025-06-16 17:50:38.609934",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2025-06-16 17:50:38.609934",
+ "modified_by": "Administrator",
+ "module": "Inventory Control Management",
+ "name": "get_inventory_health_data",
+ "owner": "Administrator",
+ "source_name": "get_inventory_health_data",
+ "timeseries": 0
+}

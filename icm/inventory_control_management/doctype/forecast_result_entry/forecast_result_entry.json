@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-19 23:06:02.707358",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rhyk",
+  "item_code",
+  "avg_daily_usage",
+  "projected_demand",
+  "lead_time_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rhyk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "avg_daily_usage",
+   "fieldtype": "Float",
+   "label": "Avg Daily Usage"
+  },
+  {
+   "fieldname": "projected_demand",
+   "fieldtype": "Float",
+   "label": "Projected Demand"
+  },
+  {
+   "fieldname": "lead_time_days",
+   "fieldtype": "Int",
+   "label": "Lead Time (Days)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-19 23:07:25.177504",
+ "modified_by": "Administrator",
+ "module": "Inventory Control Management",
+ "name": "Forecast Result Entry",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

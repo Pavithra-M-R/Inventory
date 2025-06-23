@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-14 11:49:19.953367",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_avon",
+  "warehouse",
+  "priority_level"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_avon",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse ",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "priority_level",
+   "fieldtype": "Int",
+   "label": "Priority Level"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-18 22:20:53.743385",
+ "modified_by": "Administrator",
+ "module": "Inventory Control Management",
+ "name": "Warehouse Priority",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

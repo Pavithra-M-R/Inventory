@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-17 16:18:28.916349",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_altu",
+  "item_code",
+  "warehouse",
+  "actual_qty",
+  "reorder_level",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_altu",
+   "fieldtype": "Section Break",
+   "label": "Item"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Data",
+   "label": "Warehouse"
+  },
+  {
+   "fieldname": "actual_qty",
+   "fieldtype": "Data",
+   "label": "Actual Qty"
+  },
+  {
+   "fieldname": "reorder_level",
+   "fieldtype": "Data",
+   "label": "Reorder Level"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-17 16:19:52.041864",
+ "modified_by": "Administrator",
+ "module": "Inventory Control Management",
+ "name": "Inventory Health Snapshot Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
