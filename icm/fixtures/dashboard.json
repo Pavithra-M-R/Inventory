@@ -1,0 +1,65 @@
+[
+ {
+  "cards": [],
+  "chart_options": null,
+  "charts": [
+   {
+    "chart": "Stock Movement Analytics_2",
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   }
+  ],
+  "dashboard_name": "Stock Movement Analytics_2",
+  "docstatus": 0,
+  "doctype": "Dashboard",
+  "is_default": 0,
+  "is_standard": 0,
+  "modified": "2025-06-20 14:48:44.272487",
+  "module": null,
+  "name": "Stock Movement Analytics_2"
+ },
+ {
+  "cards": [],
+  "chart_options": null,
+  "charts": [
+   {
+    "chart": "ROI Metrics_2",
+    "parent": "ROI Metrics_2",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   }
+  ],
+  "dashboard_name": "ROI Metrics_2",
+  "docstatus": 0,
+  "doctype": "Dashboard",
+  "is_default": 0,
+  "is_standard": 0,
+  "modified": "2025-06-20 16:10:52.294529",
+  "module": null,
+  "name": "ROI Metrics_2"
+ },
+ {
+  "cards": [],
+  "chart_options": null,
+  "charts": [
+   {
+    "chart": "Inventory Health Report_2",
+    "parent": "Inventory Health Report_2",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   }
+  ],
+  "dashboard_name": "Inventory Health Report_2",
+  "docstatus": 0,
+  "doctype": "Dashboard",
+  "is_default": 0,
+  "is_standard": 0,
+  "modified": "2025-06-20 13:25:33.567905",
+  "module": null,
+  "name": "Inventory Health Report_2"
+ }
+]

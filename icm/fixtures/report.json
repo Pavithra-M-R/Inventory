@@ -1,0 +1,236 @@
+[
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2025-06-20 16:07:51.758505",
+  "module": "Inventory Control Management",
+  "name": "ROI metrics_2",
+  "prepared_report": 0,
+  "query": "SELECT\r\n    i.item_code AS \"Item Code:Link/Item:150\",\r\n    i.item_name AS \"Item Name::200\",\r\n    b.warehouse AS \"Warehouse:Link/Warehouse:150\",\r\n    b.actual_qty AS \"Current Qty:Float:100\",\r\n    b.valuation_rate AS \"Valuation Rate:Currency:120\",\r\n    (b.actual_qty * b.valuation_rate) AS \"Inventory Value:Currency:120\"\r\nFROM\r\n    `tabBin` b\r\nJOIN\r\n    `tabItem` i ON b.item_code = i.name\r\nWHERE\r\n    b.actual_qty > 0\r\n",
+  "ref_doctype": "Item",
+  "reference_report": null,
+  "report_name": "ROI metrics_2",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "ROI metrics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "ROI metrics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "ROI metrics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "ROI metrics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales User"
+   },
+   {
+    "parent": "ROI metrics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "ROI metrics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "ROI metrics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "ROI metrics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "ROI metrics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Desk User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2025-06-23 11:41:26.485182",
+  "module": "Inventory Control Management",
+  "name": "Inventory Health Report_2",
+  "prepared_report": 0,
+  "query": "SELECT\r\n    i.name AS `Item Code:Link/Item:150`,\r\n    i.item_name AS `Item Name::200`,\r\n    COALESCE(SUM(b.actual_qty), 0) AS `Total Qty:Float:120`,\r\n    r.min_stock AS `Min Stock:Float:120`,\r\n    r.max_stock AS `Max Stock:Float:120`,\r\n    CASE\r\n        WHEN COALESCE(SUM(b.actual_qty), 0) < r.min_stock THEN 'Low Stock'\r\n        WHEN COALESCE(SUM(b.actual_qty), 0) > r.max_stock THEN 'Overstocked'\r\n        ELSE 'Healthy'\r\n    END AS `Inventory Status::140`\r\nFROM\r\n    `tabItem` i\r\nLEFT JOIN\r\n    `tabBin` b ON i.name = b.item_code\r\nLEFT JOIN\r\n    `tabInventory Optimization Rules` r ON i.item_group = r.item_category\r\nGROUP BY\r\n    i.name, i.item_name, r.min_stock, r.max_stock\r\nORDER BY\r\n    i.name\r\n",
+  "ref_doctype": "Item",
+  "reference_report": null,
+  "report_name": "Inventory Health Report_2",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Inventory Health Report_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "Inventory Health Report_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Inventory Health Report_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Inventory Health Report_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales User"
+   },
+   {
+    "parent": "Inventory Health Report_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Inventory Health Report_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "Inventory Health Report_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Inventory Health Report_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "Inventory Health Report_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Desk User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2025-06-23 11:51:54.131586",
+  "module": "Inventory Control Management",
+  "name": "Stock Movement Analytics_2",
+  "prepared_report": 0,
+  "query": "SELECT\r\n    posting_date AS `Date:Date:120`,\r\n    item_code AS `Item Code:Link/Item:150`,\r\n    SUM(CASE WHEN actual_qty > 0 THEN actual_qty ELSE 0 END) AS `In Qty:Float:100`,\r\n    SUM(CASE WHEN actual_qty < 0 THEN ABS(actual_qty) ELSE 0 END) AS `Out Qty:Float:100`\r\nFROM\r\n    `tabStock Ledger Entry`\r\nWHERE\r\n    posting_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY)\r\nGROUP BY\r\n    posting_date, item_code\r\nORDER BY\r\n    posting_date DESC\r\n",
+  "ref_doctype": "Item",
+  "reference_report": null,
+  "report_name": "Stock Movement Analytics_2",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales User"
+   },
+   {
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "Stock Movement Analytics_2",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Desk User"
+   }
+  ]
+ }
+]

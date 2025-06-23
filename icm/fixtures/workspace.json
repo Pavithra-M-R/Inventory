@@ -1,0 +1,51 @@
+[
+ {
+  "charts": [
+   {
+    "chart_name": "Inventory Health Report_2",
+    "label": "Inventory Health Report",
+    "parent": "Inventory Management",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   },
+   {
+    "chart_name": "Stock Movement Analytics_2",
+    "label": "Stock Movement Analytics",
+    "parent": "Inventory Management",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   },
+   {
+    "chart_name": "ROI Metrics_2",
+    "label": "ROI Metrics",
+    "parent": "Inventory Management",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   }
+  ],
+  "content": "[{\"id\":\"gIkabGg8LX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Inventory Management</span>\",\"col\":12}},{\"id\":\"aQNtxjpkC6\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Inventory Health Report\",\"col\":12}},{\"id\":\"pyMtOOzH3c\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Stock Movement Analytics\",\"col\":12}},{\"id\":\"-kBiftR1xH\",\"type\":\"chart\",\"data\":{\"chart_name\":\"ROI Metrics\",\"col\":12}}]",
+  "custom_blocks": [],
+  "custom_description": null,
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "check",
+  "indicator_color": "green",
+  "is_hidden": 0,
+  "label": "Inventory Management",
+  "links": [],
+  "modified": "2025-06-20 16:21:10.101933",
+  "module": "Inventory Control Management",
+  "name": "Inventory Management",
+  "number_cards": [],
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [],
+  "sequence_id": 41.0,
+  "shortcuts": [],
+  "title": "Inventory Management"
+ }
+]

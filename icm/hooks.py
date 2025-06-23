@@ -248,3 +248,42 @@ scheduler_events = {
         "icm.inventory_control_management.api.send_low_stock_alerts"
     ]
 }
+
+fixtures = [
+    {
+        "dt": "Report",
+        "filters": [
+            ["name", "in", [
+                "Inventory Health Report_2",
+                "Stock Movement Analytics_2",
+                "ROI Metrics_2"
+            ]]
+        ]
+    },
+    {
+        "dt": "Dashboard Chart",
+        "filters": [
+            ["name", "in", [
+                "Inventory Health Report_2",
+                "Stock Movement Analytics_2",
+                "ROI Metrics_2"
+            ]]
+        ]
+    },
+    {
+        "dt": "Dashboard",
+        "filters": [
+            ["name", "in", [
+                "Inventory Health Report_2",
+                "Stock Movement Analytics_2",
+                "ROI Metrics_2"
+            ]]
+        ]
+    },
+    {
+        "dt": "Workspace",
+        "filters": [
+            ["name", "=", "Inventory Management"]
+        ]
+    }
+]
